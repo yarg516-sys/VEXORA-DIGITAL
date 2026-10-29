@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" fill="none">
+  <defs>
+    <linearGradient id="videoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="bottleGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#e0e7ff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#a5b4fc" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="glowGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="p2Glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Player Frame Container -->
+  <rect width="800" height="500" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+
+  <!-- Top Info Header -->
+  <g transform="translate(30, 22)">
+    <rect width="180" height="28" rx="14" fill="#eff6ff" stroke="#bfdbfe" />
+    <circle cx="16" cy="14" r="4" fill="#2563eb" />
+    <text x="28" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#1e40af" letter-spacing="0.5">CONCEPT VIDEO AD</text>
+  </g>
+  <text x="770" y="40" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#64748b">Lumina Botanicals • Cinematic 4K Storyboard</text>
+
+  <!-- Cinematic Video Canvas (16:9 Viewport) -->
+  <g transform="translate(30, 65)">
+    <rect width="520" height="320" rx="12" fill="url(#videoBg)" />
+
+    <!-- Ambient Studio Lights -->
+    <ellipse cx="260" cy="160" rx="180" ry="120" fill="#38bdf8" fill-opacity="0.12" filter="url(#p2Glow)" />
+    <circle cx="340" cy="90" r="80" fill="#f43f5e" fill-opacity="0.08" filter="url(#p2Glow)" />
+
+    <!-- Cinematic Guidelines / Safe Margins -->
+    <rect x="25" y="25" width="470" height="270" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-dasharray="4,4" />
+
+    <!-- 3D Rendered Skincare Bottle Simulation -->
+    <g transform="translate(230, 80)">
+      <!-- Dropper Pipette Top -->
+      <path d="M25 0 L35 0 L32 20 L28 20 Z" fill="#e2e8f0" />
+      <rect x="20" y="20" width="20" height="10" rx="2" fill="#cbd5e1" />
+      <rect x="18" y="30" width="24" height="6" rx="1" fill="#f59e0b" />
+      <!-- Bottle Body -->
+      <rect x="5" y="38" width="50" height="96" rx="12" fill="url(#bottleGlass)" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.5" />
+      <!-- Serum Liquid Level -->
+      <path d="M7 65 C18 62 38 68 53 65 L53 122 C53 128 47 132 41 132 L19 132 C13 132 7 128 7 122 Z" fill="url(#liquidGrad)" />
+      <!-- Label -->
+      <rect x="12" y="75" width="36" height="42" rx="3" fill="#ffffff" fill-opacity="0.95" />
+      <text x="30" y="88" text-anchor="middle" font-family="'Inter', sans-serif" font-size="5" font-weight="800" fill="#0f172a">LUMINA</text>
+      <text x="30" y="95" text-anchor="middle" font-family="'Inter', sans-serif" font-size="3.5" font-weight="600" fill="#64748b">BOTANICALS</text>
+      <line x1="18" y1="99" x2="42" y2="99" stroke="#f59e0b" stroke-width="0.75" />
+      <text x="30" y="107" text-anchor="middle" font-family="'Inter', sans-serif" font-size="4" font-weight="500" fill="#0f172a">RADIANCE ELIXIR</text>
+      <text x="30" y="113" text-anchor="middle" font-family="'Inter', sans-serif" font-size="3" fill="#94a3b8">30ml • 1.0 fl oz</text>
+      <!-- Glass Glare Lines -->
+      <line x1="11" y1="42" x2="11" y2="128" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.8" />
+      <line x1="15" y1="46" x2="15" y2="70" stroke="#ffffff" stroke-width="0.7" stroke-opacity="0.5" />
+    </g>
+
+    <!-- Floating Dew Droplets -->
+    <circle cx="180" cy="150" r="6" fill="#ffffff" fill-opacity="0.4" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="178" cy="148" r="2" fill="#ffffff" />
+    <circle cx="340" cy="180" r="8" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="337" cy="177" r="2.5" fill="#ffffff" />
+    <circle cx="310" cy="120" r="4" fill="#ffffff" fill-opacity="0.4" />
+
+    <!-- Video Overlay UI (Title & Rec Indicator) -->
+    <g transform="translate(24, 20)">
+      <circle cx="6" cy="6" r="4" fill="#ef4444" />
+      <text x="16" y="10" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#ffffff">REC</text>
+      <text x="50" y="10" font-family="'Inter', sans-serif" font-size="9" font-weight="500" fill="#94a3b8">00:18:24 / 00:30:00</text>
+    </g>
+    <rect x="440" y="16" width="56" height="20" rx="4" fill="#000000" fill-opacity="0.5" />
+    <text x="468" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#38bdf8">4K HDR</text>
+
+    <!-- Center Play Button Overlay -->
+    <g transform="translate(260, 160)">
+      <circle cx="0" cy="0" r="26" fill="#2563eb" fill-opacity="0.9" />
+      <circle cx="0" cy="0" r="32" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="6,4" />
+      <polygon points="-5,-10 12,0 -5,10" fill="#ffffff" />
+    </g>
+
+    <!-- Scrub Bar Controls -->
+    <g transform="translate(20, 286)">
+      <rect width="480" height="22" rx="4" fill="#000000" fill-opacity="0.6" />
+      <!-- Play button small -->
+      <polygon points="12,7 18,11 12,15" fill="#ffffff" />
+      <!-- Timeline bar -->
+      <rect x="28" y="9" width="370" height="4" rx="2" fill="#334155" />
+      <rect x="28" y="9" width="220" height="4" rx="2" fill="url(#glowGlow)" />
+      <circle cx="248" cy="11" r="5" fill="#ffffff" />
+      <!-- Time -->
+      <text x="445" y="15" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">0:18 / 0:30</text>
+    </g>
+  </g>
+
+  <!-- Right Side Storyboard Keyframes -->
+  <g transform="translate(570, 65)">
+    <rect width="200" height="320" rx="12" fill="#ffffff" stroke="#e2e8f0" />
+    <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#0f172a">SCENE SEQUENCE</text>
+    <text x="16" y="42" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b">Commercial Storyboard Beats</text>
+
+    <!-- Shot 1 -->
+    <g transform="translate(14, 55)">
+      <rect width="172" height="68" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+      <text x="10" y="16" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" fill="#a5b4fc">SCENE 01: MACRO DROPLET</text>
+      <circle cx="86" cy="38" r="16" fill="#38bdf8" fill-opacity="0.3" />
+      <text x="10" y="58" font-family="'Inter', sans-serif" font-size="7" fill="#cbd5e1">Slow-mo botanical oil ripple</text>
+    </g>
+
+    <!-- Shot 2 -->
+    <g transform="translate(14, 134)">
+      <rect width="172" height="68" rx="6" fill="#0f172a" stroke="#2563eb" stroke-width="1.5" />
+      <text x="10" y="16" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" fill="#38bdf8">SCENE 02: BOTTLE REVEAL (ACTIVE)</text>
+      <rect x="76" y="24" width="20" height="32" rx="4" fill="#f59e0b" fill-opacity="0.5" />
+      <text x="10" y="58" font-family="'Inter', sans-serif" font-size="7" fill="#cbd5e1">Atmospheric backlight mist</text>
+    </g>
+
+    <!-- Shot 3 -->
+    <g transform="translate(14, 213)">
+      <rect width="172" height="68" rx="6" fill="#1e293b" stroke="#cbd5e1" stroke-width="1" />
+      <text x="10" y="16" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" fill="#94a3b8">SCENE 03: BRAND CALL-TO-ACTION</text>
+      <text x="86" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="800" fill="#ffffff">LUMINA</text>
+      <text x="10" y="58" font-family="'Inter', sans-serif" font-size="7" fill="#cbd5e1">Typography lockup &amp; packshot</text>
+    </g>
+
+    <text x="100" y="306" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#2563eb">View Full 30s Treatment &gt;</text>
+  </g>
+
+  <!-- Bottom Technical Strip -->
+  <g transform="translate(30, 405)">
+    <rect width="740" height="70" rx="10" fill="#ffffff" stroke="#e2e8f0" />
+    <g transform="translate(20, 18)">
+      <text x="0" y="12" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0f172a">PRODUCTION SPECIFICATIONS</text>
+      <text x="0" y="32" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">Format: 4K UHD ProRes 422 HQ • Aspect: 16:9 Cinema &amp; 9:16 Social Cut • Audio: Bespoke Spatial Audio Score</text>
+    </g>
+    <!-- Badges -->
+    <g transform="translate(540, 20)">
+      <rect width="84" height="28" rx="6" fill="#f1f5f9" />
+      <text x="42" y="18" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#334155">After Effects</text>
+      <rect x="94" width="90" height="28" rx="6" fill="#eff6ff" stroke="#bfdbfe" />
+      <text x="139" y="18" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">AI Generative</text>
+    </g>
+  </g>
+</svg>
